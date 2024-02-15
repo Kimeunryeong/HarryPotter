@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CharaBg from "../assets/hp3.jpg";
+import Spell from "../assets/hp1.png";
 
 const urlToFetch = "https://harry-potter-api-en.onrender.com/db";
 
@@ -22,7 +23,8 @@ export default function MainPage() {
 
   return (
     <>
-      <div className=" w-full">
+      {/* 헤더 */}
+      <section className=" w-full mb-24">
         {/* 타이틀 이미지 */}
         <div className="">
           <img
@@ -32,42 +34,72 @@ export default function MainPage() {
         </div>
 
         {/* nav */}
-        <div className="flex justify-center items-center m-16">
-          <ul className="flex gap-12">
+        <div className="w-full flex justify-center items-center my-16">
+          <ul className="flex gap-12 text-xl">
             <li>
-              <a href="#">캐릭터</a>
+              <a href="#">Character</a>
             </li>
             <li>
-              <a href="#">스펠</a>
+              <a href="#">Spell</a>
             </li>
             <li>
-              <a href="#">책</a>
+              <a href="#">book</a>
             </li>
           </ul>
         </div>
+      </section>
 
-        {/* 캐릭터 */}
-        <div className="flex items-center justify-center">
+      {/* 캐릭터 */}
+      {/* <div className="flex items-center justify-center">
           {characters.slice(0, 5).map((character) => (
-            <div className="" key={character.id}>
-              {/* 이미지 */}
-              <img
+            <div className="" key={character.id}> */}
+      {/* 이미지 */}
+      {/* <img
                 src={character.image}
                 alt={character.character}
                 className="w-[200px] h-[255px] "
               />
             </div>
           ))}
-        </div>
-        <section className="w-full h-40">
-          <div className="">
-            <img src={CharaBg}></img>
-          </div>
-        </section>
+        </div> */}
 
-        <section>스펠 이미지</section>
-        <section>책 이미지</section>
-      </div>
+      {/* 캐릭터 섹션 */}
+      <section className="w-full h-96 flex flex-col justify-center items-center my-40">
+        {/* 서브 타이틀 */}
+        <div className="w-3/4 m-8">
+          <p className=" text-4xl">Character</p>
+        </div>
+        <div className=" w-3/4 h-full flex justify-center m-auto">
+          {/* 링크 사용하기(캐릭터페이지) */}
+          <a href="#"
+          className="flex justify-center m-auto">
+            <img
+              className="w-full object-cover"
+              src={CharaBg}
+              alt="character_intro_img"
+            />
+          </a>
+        </div>
+      </section>
+
+      {/* 스펠 섹션 */}
+      <section className="w-full h-96 flex flex-col justify-center items-center">
+        <div className="w-3/4 m-8">
+          <p className=" text-4xl">Spell</p>
+        </div>
+        <div className=" w-3/4 h-full flex justify-center m-auto">
+          {/* 링크 사용하기(스펠 페이지) */}
+          <a href="#">
+            <img
+              className="w-full object-cover"
+              src={Spell}
+              alt="spell_intro_img"
+            />
+          </a>
+        </div>
+      </section>
+
+      <section>책 이미지</section>
     </>
   );
 }
