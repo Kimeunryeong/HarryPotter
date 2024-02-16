@@ -31,6 +31,7 @@ export default function MainPage() {
           <img
             className="mx-auto w-[25%] m-10"
             src="https://i.namu.wiki/i/jCLGnjDnwyUt3yFxdoUQm3eI1kEdOS65vQHMq7z2m4cAmCY_5f8TcOV_B9ti2H6rUs3KYXQ35TRxns2N2PQI0w.webp"
+            alt="title img"
           ></img>
         </div>
 
@@ -38,13 +39,13 @@ export default function MainPage() {
         <div className="w-full flex justify-center items-center my-16">
           <ul className="flex gap-12 text-xl">
             <li>
-              <a href="#">Character</a>
+              <Link to="character">Character</Link>
             </li>
             <li>
-              <a href="#">Spell</a>
+              <Link to="spell">Spell</Link>
             </li>
             <li>
-              <a href="#">book</a>
+              <Link to="book">book</Link>
             </li>
           </ul>
         </div>
@@ -75,13 +76,13 @@ export default function MainPage() {
         </div>
         <div className=" w-3/4 h-full flex justify-center m-auto">
           {/* 링크 사용하기(스펠 페이지) */}
-          <a href="#">
+          <Link to="spell#">
             <img
               className="w-full object-cover"
               src={Spell}
               alt="spell_intro_img"
             />
-          </a>
+          </Link>
         </div>
       </section>
 

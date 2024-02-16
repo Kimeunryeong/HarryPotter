@@ -17,7 +17,7 @@ export default function Character() {
         setCharacters(charactersArray);
       })
       .catch((e) => console.log(e));
-  }, []);
+  }, [characters]);
 
   return (
     <div className="w-full">
