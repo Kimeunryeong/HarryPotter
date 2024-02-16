@@ -14,7 +14,7 @@ export default function Character() {
         setCharacters((prevCharacters) => [...prevCharacters, ...charactersArray]);
       })
       .catch((e) => console.log(e));
-  }, [characters]); // 빈 배열로 설정
+  }, []); // 빈 배열로 설정
   
 
   return (
