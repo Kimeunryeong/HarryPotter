@@ -17,7 +17,7 @@ export default function Character() {
         setCharacters(charactersArray);
       })
       .catch((e) => console.log(e));
-  }, []); // 빈 배열로 수정
+  }, [characters]); // 빈 배열로 수정, 네틀리파이 오류로 수정
 
   return (
     <div className="w-full">
