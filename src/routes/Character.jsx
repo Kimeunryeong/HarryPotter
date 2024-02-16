@@ -9,15 +9,13 @@ export default function Character() {
     fetch(urlToFetch)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data); // 확인용 로그
-
-        // 예상되는 데이터 위치에 따라 수정
+        console.log(data);
         const charactersArray = data.characters || [];
-
-        setCharacters(charactersArray);
+        setCharacters((prevCharacters) => [...prevCharacters, ...charactersArray]);
       })
       .catch((e) => console.log(e));
-  }, [characters]); // 빈 배열로 수정, 네틀리파이 오류로 수정
+  }, []); // 빈 배열로 설정
+  
 
   return (
     <div className="w-full">
