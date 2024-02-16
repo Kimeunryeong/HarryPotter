@@ -11,11 +11,11 @@ export default function Character() {
       .then((data) => {
         // console.log(data);
         const charactersArray = data.characters || [];
-        setCharacters((prevCharacters) => [...prevCharacters, ...charactersArray]);
+        setCharacters(charactersArray);
       })
       .catch((e) => console.log(e));
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // 빈 배열로 설정
-  
 
   return (
     <div className="w-full">
@@ -34,9 +34,15 @@ export default function Character() {
               />
             </div>
             {/* 텍스트 */}
-            <div className=" text-center">
-              <p>{character.character}</p>
-              <p>{character.nickname}</p>
+            <div className="">
+              <div>
+                <span className=" text-gray-500">NAME : </span>
+                <span>{character.character}</span>
+              </div>
+              <div>
+                <span className=" text-gray-500">NICKNAME : </span>
+                <span>{character.nickname}</span>
+              </div>
             </div>
           </div>
         ))}
