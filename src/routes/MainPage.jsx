@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CharaBg from "../assets/hp3.jpg";
 import Spell from "../assets/hp1.png";
-import Character from "./Character";
-import { Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const urlToFetch = "https://harry-potter-api-en.onrender.com/db";
 
