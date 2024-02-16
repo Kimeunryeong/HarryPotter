@@ -18,13 +18,15 @@ export default function Character() {
       })
       .catch((e) => console.log(e));
   }, []); // 빈 배열로 수정
-}
 
   return (
     <div className="w-full">
       <div className="w-[1200px] grid grid-cols-4 m-auto items-center">
         {characters.map((character) => (
-          <div key={character.id} className=" flex flex-col justify-center my-10 items-center">
+          <div
+            key={character.id}
+            className=" flex flex-col justify-center my-10 items-center"
+          >
             {/* 이미지 */}
             <div className=" mb-4">
               <img
