@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import CharaBg from "../assets/hp3.jpg";
 import Spell from "../assets/hp1.png";
+import Character from "./Character";
+import { Routes, Route, Link } from "react-router-dom";
 
 const urlToFetch = "https://harry-potter-api-en.onrender.com/db";
 
@@ -49,20 +51,6 @@ export default function MainPage() {
         </div>
       </section>
 
-      {/* 캐릭터 */}
-      {/* <div className="flex items-center justify-center">
-          {characters.slice(0, 5).map((character) => (
-            <div className="" key={character.id}> */}
-      {/* 이미지 */}
-      {/* <img
-                src={character.image}
-                alt={character.character}
-                className="w-[200px] h-[255px] "
-              />
-            </div>
-          ))}
-        </div> */}
-
       {/* 캐릭터 섹션 */}
       <section className="w-full h-96 flex flex-col justify-center items-center my-40">
         {/* 서브 타이틀 */}
@@ -71,14 +59,13 @@ export default function MainPage() {
         </div>
         <div className=" w-3/4 h-full flex justify-center m-auto">
           {/* 링크 사용하기(캐릭터페이지) */}
-          <a href="#"
-          className="flex justify-center m-auto">
+          <Link to="/Character" className="flex justify-center m-auto">
             <img
               className="w-full object-cover"
               src={CharaBg}
-              alt="character_intro_img"
+              alt="Character_intro_img"
             />
-          </a>
+          </Link>
         </div>
       </section>
 
