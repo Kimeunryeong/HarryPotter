@@ -38,9 +38,9 @@ export default function MainPage() {
         <div className="w-3/4 m-8">
           <p className=" text-4xl">Character</p>
         </div>
-        <div className=" w-3/4 h-full flex justify-center m-auto">
+        <div className=" w-3/4 flex justify-center m-auto ">
           {/* 링크 사용하기(캐릭터페이지) */}
-          <Link to="character" className="flex justify-center m-auto">
+          <Link to="character" className="w-full flex justify-center m-auto">
             <img
               className="w-full object-cover"
               src={CharaBg}
