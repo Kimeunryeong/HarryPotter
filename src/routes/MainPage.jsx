@@ -1,26 +1,8 @@
-import React, { useEffect, useState } from "react";
 import CharaBg from "../assets/hp3.jpg";
 import Spell from "../assets/hp1.png";
 import { Link } from "react-router-dom";
 
 export default function MainPage() {
-  const urlToFetch = "https://harry-potter-api-en.onrender.com/db";
-  const [characters, setCharacters] = useState([]);
-
-  useEffect(() => {
-    fetch(urlToFetch)
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        // 예상되는 데이터 위치에 따라 수정
-        const charactersArray = data.characters || [];
-
-        setCharacters(charactersArray);
-        console.log(characters); // 확인용 로그
-      })
-      .catch((e) => console.log(e));
-  }, []);
-
   return (
     <>
       {/* 헤더 */}
