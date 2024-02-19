@@ -10,6 +10,7 @@ const Spell = () => {
         const response = await fetch(urlToFetch);
         const data = await response.json();
         setSpell(data);
+        console.log(data)
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -24,7 +25,9 @@ const Spell = () => {
   }
 
   // spell이 로드된 후에 렌더링
-  return <div>{JSON.stringify(spell)}</div>;
+  return <div>{spell.map((item, index) =>{
+    <div key={index}>{item.id}</div>
+  })}</div>;
 };
 
 export default Spell;
