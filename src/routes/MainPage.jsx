@@ -1,73 +1,79 @@
-import CharaBg from "../assets/hp3.jpg";
-import Spell from "../assets/hp1.png";
 import { Link } from "react-router-dom";
+import Logo from "../assets/logo.png";
+import React, { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.min.css";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+
+
+const urlToFetch = "https://harry-potter-api-en.onrender.com/db";
 
 export default function MainPage() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch(urlToFetch)
+      .then((res) => res.json())
+      .then((data) => {
+        // console.log(data);
+        const charactersData = data.characters || [];
+        const spellsData = data.spells || [];
+        const booksData = data.books || [];
+
+        setData({
+          characters: charactersData,
+          spells: spellsData,
+          books: booksData,
+        });
+        console.log(data.characters);
+        // console.log(data.spells);
+      })
+      .catch((e) => console.log(e));
+  }, []); // 빈 배열로 설정
+
   return (
     <>
       {/* 헤더 */}
-      <section className=" w-full mb-24">
-        {/* 타이틀 이미지 */}
-        <div className="">
-          <img
-            className="mx-auto w-[25%] m-10"
-            src="https://i.namu.wiki/i/jCLGnjDnwyUt3yFxdoUQm3eI1kEdOS65vQHMq7z2m4cAmCY_5f8TcOV_B9ti2H6rUs3KYXQ35TRxns2N2PQI0w.webp"
-            alt="title img"
-          ></img>
-        </div>
+      <div className="w-full h-[100px]">
+        {/* 로고 */}
+        <div className="w-[1500px] h-full bg-red-500 flex justify-center justify-between items-center m-auto mt-4">
+          <div className="h-full p-2 mt-2">
+            <Link to={"/"}>
+              <img src={Logo} alt="harry logo" className="h-full " />
+            </Link>
+          </div>
 
-        {/* nav */}
-        <div className="w-full flex justify-center items-center my-16">
-          <ul className="flex gap-12 text-xl">
-            <li>
-              <Link to="character">Character</Link>
-            </li>
-            <li>
-              <Link to="spell">Spell</Link>
-            </li>
-            <li>
-              <Link to="book">book</Link>
-            </li>
-          </ul>
+          {/* 메뉴 */}
+          <div className="flex space-x-10">
+            <Link to="/characters">
+              <p>CHARACTERS</p>
+            </Link>
+            <Link to="/spells">
+              <p>SPELLS</p>
+            </Link>
+            <Link to="books">
+              <p>BOOKS</p>
+            </Link>
+            <p>MOVIES</p>
+          </div>
         </div>
-      </section>
+      </div>
 
-      {/* 캐릭터 섹션 */}
-      <section className="w-full h-96 flex flex-col justify-center items-center my-40">
-        {/* 서브 타이틀 */}
-        <div className="w-3/4 m-8">
-          <p className=" text-4xl">Character</p>
-        </div>
-        <div className=" w-3/4 flex justify-center m-auto ">
-          {/* 링크 사용하기(캐릭터페이지) */}
-          <Link to="character" className="w-full flex justify-center m-auto">
-            <img
-              className="w-full object-cover"
-              src={CharaBg}
-              alt="Character_intro_img"
-            />
-          </Link>
-        </div>
-      </section>
-
-      {/* 스펠 섹션 */}
-      <section className="w-full h-96 flex flex-col justify-center items-center">
-        <div className="w-3/4 m-8">
-          <p className=" text-4xl">Spell</p>
-        </div>
-        <div className=" w-3/4 h-full flex justify-center m-auto">
-          {/* 링크 사용하기(스펠 페이지) */}
-          <Link to="spell">
-            <img
-              className="w-full object-cover"
-              src={Spell}
-              alt="spell_intro_img"
-            />
-          </Link>
-        </div>
-      </section>
-
-      <section>책 이미지</section>
+      {/* 캐릭터 */}
+      <Swiper
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={50}
+        slidesPerView={3}
+        navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+      >
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        ...
+      </Swiper>
     </>
   );
 }
