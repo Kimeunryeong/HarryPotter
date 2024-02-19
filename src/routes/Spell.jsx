@@ -1,28 +1,30 @@
 import React, { useEffect, useState } from "react";
 
-export default function Spell() {
+const Spell = () => {
   const urlToFetch = "https://harry-potter-api-en.onrender.com/spells";
-  const [spells, setSpells] = useState([]);
+  const [spell, setSpell] = useState(null);
 
   useEffect(() => {
-    fetch(urlToFetch)
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        const spellsArray = data.spells || []; // 수정된 부분
-        setSpells(spellsArray);
-      })
-      .catch((e) => console.log(e));
-  }, []);
+    const fetchData = async () => {
+      try {
+        const response = await fetch(urlToFetch);
+        const data = await response.json();
+        setSpell(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
 
-  return (
-    <div>
-      {spells.map((sp) => (
-        <div key={sp.id}>
-          <div className="text-white">{sp.spell}</div>
-          <div>{sp.use}</div>
-        </div>
-      ))}
-    </div>
-  );
-}
+    fetchData();
+  }, [urlToFetch]);
+
+  // spell이 로드되기 전에 렌더링하지 않도록 체크
+  if (!spell) {
+    return <div>Loading...</div>;
+  }
+
+  // spell이 로드된 후에 렌더링
+  return <div>{JSON.stringify(spell)}</div>;
+};
+
+export default Spell;

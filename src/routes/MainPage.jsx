@@ -3,9 +3,8 @@ import CharaBg from "../assets/hp3.jpg";
 import Spell from "../assets/hp1.png";
 import { Link } from "react-router-dom";
 
-const urlToFetch = "https://harry-potter-api-en.onrender.com/db";
-
 export default function MainPage() {
+  const urlToFetch = "https://harry-potter-api-en.onrender.com/db";
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
@@ -20,7 +19,7 @@ export default function MainPage() {
         console.log(characters); // 확인용 로그
       })
       .catch((e) => console.log(e));
-  }, []);
+  }, [characters]);
 
   return (
     <>
@@ -59,7 +58,7 @@ export default function MainPage() {
         </div>
         <div className=" w-3/4 h-full flex justify-center m-auto">
           {/* 링크 사용하기(캐릭터페이지) */}
-          <Link to="/Character" className="flex justify-center m-auto">
+          <Link to="character" className="flex justify-center m-auto">
             <img
               className="w-full object-cover"
               src={CharaBg}
@@ -76,7 +75,7 @@ export default function MainPage() {
         </div>
         <div className=" w-3/4 h-full flex justify-center m-auto">
           {/* 링크 사용하기(스펠 페이지) */}
-          <Link to="spell#">
+          <Link to="spell">
             <img
               className="w-full object-cover"
               src={Spell}

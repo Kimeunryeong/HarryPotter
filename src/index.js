@@ -5,9 +5,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 import MainPage from "./routes/MainPage";
 import Character from "./routes/Character";
-import Spell from "./routes/Spell";
 import Book from "./routes/Book";
-
+import Spell from "./routes/Spell"
 
 const router = createBrowserRouter([
   { path: "/", element: <MainPage /> },

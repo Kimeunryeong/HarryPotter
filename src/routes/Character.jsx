@@ -9,12 +9,12 @@ export default function Character() {
     fetch(urlToFetch)
       .then((res) => res.json())
       .then((data) => {
-        // console.log(data);
+        console.log(data);
         const charactersArray = data.characters || [];
         setCharacters(charactersArray);
       })
       .catch((e) => console.log(e));
-      // eslint-disable-next-line react-hooks/exhaustive-deps
+      
   }, []); // 빈 배열로 설정
 
   return (
