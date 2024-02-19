@@ -19,7 +19,7 @@ export default function MainPage() {
         console.log(characters); // 확인용 로그
       })
       .catch((e) => console.log(e));
-  }, [characters]);
+  }, []);
 
   return (
     <>
