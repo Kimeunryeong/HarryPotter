@@ -34,25 +34,4 @@ useEffect(() => {
     .catch((e) => console.log(e));
 }, []); // 빈 배열로 설정
 
-interface IProps {
-  list: IListItem[];
-}
-
-const SlideItem: React.FC<IProps> = (props) => {
-  const { list } = props;
-
-  return (
-    <>
-      <Swiper spaceBetween={16} slidesPerView={{ default: 3 }}>
-        {list.map((item: IListItem, key: number) => (
-          <SwiperSlide key={`slide_list_${key}`}>
-            <img src={item.image} alt="slide_image" />
-            <p>{item.name}</p>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </>
-  );
-};
-
-export default SlideItem;
+return <></>;
