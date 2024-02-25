@@ -1,29 +1,8 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo.png";
-import CharacterList from "../components/CharacterList";
+// import CharacterList from "../components/CharacterList";
 
 export default function MainPage() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetch(urlToFetch)
-      .then((res) => res.json())
-      .then((data) => {
-        // console.log(data);
-        const charactersData = data.characters || [];
-        const spellsData = data.spells || [];
-        const booksData = data.books || [];
-
-        setData({
-          characters: charactersData,
-          spells: spellsData,
-          books: booksData,
-        });
-        console.log(data.characters);
-        // console.log(data.spells);
-      })
-      .catch((e) => console.log(e));
-  }, []); // 빈 배열로 설정
 
   return (
     <>
@@ -56,7 +35,7 @@ export default function MainPage() {
       {/* 캐릭터 */}
 
       <div>
-        <CharacterList />
+        {/* <CharacterList /> */}
       </div>
     </>
   );

@@ -10,9 +10,9 @@ import Spell from "./routes/Spell"
 
 const router = createBrowserRouter([
   { path: "/", element: <MainPage /> },
-  { path: "characters", element: <Character /> },
-  { path: "spells", element: <Spell /> },
-  { path: "books", element: <Book /> }
+  { path: "/characters", element: <Character /> },
+  { path: "/spells", element: <Spell /> },
+  { path: "/books", element: <Book /> }
 ]);
 
 const queryClient = new QueryClient();
