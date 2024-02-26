@@ -1,0 +1,362 @@
+[
+  {
+      "id": 1,
+      "spell": "Accio",
+      "use": "불러오는 주문"
+  },
+  {
+      "id": 2,
+      "spell": "Glisseo",
+      "use": "계단을 미끄럼틀로 변환하는 주문"
+  },
+  {
+      "id": 3,
+      "spell": "Impervius",
+      "use": "주문 사용자를 다양한 물질로부터 보호하는 주문, 물과 불을 포함"
+  },
+  {
+      "id": 4,
+      "spell": "Wingardium Leviosa/Locomotor",
+      "use": "물체를 공중으로 띄우는 주문"
+  },
+  {
+      "id": 5,
+      "spell": "Scourgify",
+      "use": "물건을 청소하는 주문"
+  },
+  {
+      "id": 6,
+      "spell": "Portus",
+      "use": "포틀키를 만드는 주문"
+  },
+  {
+      "id": 7,
+      "spell": "Orchideous",
+      "use": "완드 끝에서 꽃을 피우는 주문"
+  },
+  {
+      "id": 8,
+      "spell": "Lumos",
+      "use": "완드에서 빛을 내는 주문"
+  },
+  {
+      "id": 9,
+      "spell": "Reparo",
+      "use": "고장난 물체를 수리하는 주문"
+  },
+  {
+      "id": 10,
+      "spell": "Reducio",
+      "use": "물체를 줄이는 주문"
+  },
+  {
+      "id": 11,
+      "spell": "Pack",
+      "use": "여행 가방과 짐을 싸는 주문"
+  },
+  {
+      "id": 12,
+      "spell": "Riddikulus",
+      "use": "보가트를 웃음나게 변환하는 주문"
+  },
+  {
+      "id": 13,
+      "spell": "Protego",
+      "use": "저주로부터 주문 사용자를 보호하는 주문"
+  },
+  {
+      "id": 14,
+      "spell": "Muffliato",
+      "use": "주변의 다른 사람들이 대화를 듣지 못하게 하는 주문"
+  },
+  {
+      "id": 15,
+      "spell": "Silencio/Langlock",
+      "use": "누군가의 말을 멈추게 하는 주문 (혀를 입 천장에 붙이는 방식)"
+  },
+  {
+      "id": 16,
+      "spell": "Expelliarmus",
+      "use": "무장 해제 주문"
+  },
+  {
+      "id": 17,
+      "spell": "Oblivate",
+      "use": "기억을 지우는 주문"
+  },
+  {
+      "id": 18,
+      "spell": "Episkey",
+      "use": "작은 부상을 치료하는 주문"
+  },
+  {
+      "id": 19,
+      "spell": "Tergeo",
+      "use": "표면을 깨끗이 하는 주문"
+  },
+  {
+      "id": 20,
+      "spell": "Relashio",
+      "use": "대상이 잡고 있는 것을 놓치게 하는 주문"
+  },
+  {
+      "id": 21,
+      "spell": "Confundo",
+      "use": "혼란을 일으키고 다른 사람들을 영향 받기 쉽게 만드는 주문"
+  },
+  {
+      "id": 22,
+      "spell": "Expecto Patronum",
+      "use": "패트로누스 마법"
+  },
+  {
+      "id": 23,
+      "spell": "Ferula",
+      "use": "붕대를 만들어내는 주문"
+  },
+  {
+      "id": 24,
+      "spell": "Evanesco",
+      "use": "소멸시키는 주문"
+  },
+  {
+      "id": 25,
+      "spell": "Alohomora",
+      "use": "자물쇠를 여는 주문"
+  },
+  {
+      "id": 26,
+      "spell": "Nox",
+      "use": "루모스를 끄는 주문"
+  },
+  {
+      "id": 27,
+      "spell": "Quietus",
+      "use": "마법으로 증폭된 목소리를 가라앉히는 주문"
+  },
+  {
+      "id": 28,
+      "spell": "Incendio",
+      "use": "불을 일으키는 주문"
+  },
+  {
+      "id": 29,
+      "spell": "Homenum Revelio",
+      "use": "근처의 사람들을 드러내는 주문"
+  },
+  {
+      "id": 30,
+      "spell": "Prior Incantato",
+      "use": "마지막으로 시전된 주문을 드러내는 주문"
+  },
+  {
+      "id": 31,
+      "spell": "Finite Incantatem",
+      "use": "많은 주문의 효과를 무효화하는 주문"
+  },
+  {
+      "id": 32,
+      "spell": "Erecto",
+      "use": "텐트나 다른 구조물을 세우는 주문"
+  },
+  {
+      "id": 33,
+      "spell": "Diffindo",
+      "use": "물질을 자르거나 찢는 주문"
+  },
+  {
+      "id": 34,
+      "spell": "Stupefy",
+      "use": "대상을 기절시키는 주문"
+  },
+  {
+      "id": 35,
+      "spell": "Repelo Muggletum",
+      "use": "머글을 배척하는 주문"
+  },
+  {
+      "id": 36,
+      "spell": "Avada Kedavra",
+      "use": "죽음의 주문"
+  },
+  {
+      "id": 37,
+      "spell": "Aguamenti",
+      "use": "완드에서 물을 발사하는 주문"
+  },
+  {
+      "id": 38,
+      "spell": "Geminio",
+      "use": "어떤 물체의 일시적이고 가치 없는 복제본을 만들어내는 주문"
+  },
+  {
+      "id": 39,
+      "spell": "Locomotor Mortis",
+      "use": "다리를 잠그는 주문"
+  },
+  {
+      "id": 40,
+      "spell": "Anapneo",
+      "use": "누군가의 기도로 길을 열어주는 주문"
+  },
+  {
+      "id": 41,
+      "spell": "Reducto",
+      "use": "물체를 폭발시키는 주문"
+  },
+  {
+      "id": 42,
+      "spell": "Obscuro",
+      "use": "대상의 눈을 가리는 주문"
+  },
+  {
+      "id": 43,
+      "spell": "Impedimenta",
+      "use": "자신에게 다가오는 상대를 얼려주는 주문"
+  },
+  {
+      "id": 44,
+      "spell": "Cave Inimicum/Protego Totalum",
+      "use": "지역의 방어를 강화하는 주문"
+  },
+  {
+      "id": 45,
+      "spell": "Meteolojinx Recanto",
+      "use": "날씨 주문의 효과를 종료하는 주문"
+  },
+  {
+      "id": 46,
+      "spell": "Specialis Revelio",
+      "use": "물체의 숨겨진 마법적인 특성을 드러내는 주문"
+  },
+  {
+      "id": 47,
+      "spell": "Descendo",
+      "use": "물체를 아래로 움직이는 주문"
+  },
+  {
+      "id": 48,
+      "spell": "Defodio",
+      "use": "돌과 강철을 파내는 주문"
+  },
+  {
+      "id": 49,
+      "spell": "Aparecium",
+      "use": "보이지 않는 잉크를 나타나게 하는 주문"
+  },
+  {
+      "id": 50,
+      "spell": "Piertotum Locomotor",
+      "use": "동상을 생명을 불어넣어 움직이게 하는 주문"
+  },
+  {
+      "id": 51,
+      "spell": "Imperio",
+      "use": "대상에게 모든 명령을 따르게 하는 주문"
+  },
+  {
+      "id": 52,
+      "spell": "Fidelius Charm",
+      "use": "비밀을 영혼에 묶는 주문"
+  },
+  {
+      "id": 53,
+      "spell": "Avis/Oppugno",
+      "use": "완드에서 무리의 새를 발사하는 주문"
+  },
+  {
+      "id": 54,
+      "spell": "Expulso",
+      "use": "물체를 폭발시키는 주문"
+  },
+  {
+      "id": 55,
+      "spell": "Legilimens",
+      "use": "대상의 기억과 생각을 드러내는 주문"
+  },
+  {
+      "id": 56,
+      "spell": "Duro",
+      "use": "물체를 단단하게 만드는 주문"
+  },
+  {
+      "id": 57,
+      "spell": "Sonorus",
+      "use": "목소리를 증폭시키는 주문"
+  },
+  {
+      "id": 58,
+      "spell": "Deprimo",
+      "use": "강력한 하향 압력을 만들어내는 주문"
+  },
+  {
+      "id": 59,
+      "spell": "Levicorpus",
+      "use": "대상을 발목으로 띄우는 주문"
+  },
+  {
+      "id": 60,
+      "spell": "Liberacorpus",
+      "use": "Levicorpus의 대상을 낮추는 주문"
+  },
+  {
+      "id": 61,
+      "spell": "Mobilicorpus",
+      "use": "시체를 이동시키는 주문"
+  },
+  {
+      "id": 62,
+      "spell": "Confringo",
+      "use": "물체를 불길 속으로 폭발시키는 주문"
+  },
+  {
+      "id": 63,
+      "spell": "Densaugeo",
+      "use": "이빨을 빠르게 자라게 하는 주문"
+  },
+  {
+      "id": 64,
+      "spell": "Incarcarous",
+      "use": "로프로 묶는 주문"
+  },
+  {
+      "id": 65,
+      "spell": "Deletrius",
+      "use": "Prior Incantato의 효과를 사라지게 하는 주문"
+  },
+  {
+      "id": 66,
+      "spell": "Rictusempra",
+      "use": "간지럽히는 주문"
+  },
+  {
+      "id": 67,
+      "spell": "Petrificus Totalus",
+      "use": "대상을 완전히 움직일 수 없게 만드는 주문"
+  },
+  {
+      "id": 68,
+      "spell": "Fiendfyre Curse",
+      "use": "저주로 가득 찬 불을 일으키는 주문"
+  },
+  {
+      "id": 69,
+      "spell": "Tarantallegra",
+      "use": "대상을 춤추게 하는 주문"
+  },
+  {
+      "id": 70,
+      "spell": "Morsmordre",
+      "use": "어둠의 징조를 소환하는 주문"
+  },
+  {
+      "id": 71,
+      "spell": "Sectumsempra",
+      "use": "심한 찢김을 일으키는 주문"
+  },
+  {
+      "id": 72,
+      "spell": "Crucio",
+      "use": "막대한 고통을 일으키는 주문"
+  }
+]

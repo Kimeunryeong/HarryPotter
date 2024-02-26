@@ -6,7 +6,7 @@
 body {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   overflow-y: scroll;
 
   background: url("./assets/bg.gif") center no-repeat;
